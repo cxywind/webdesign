@@ -1,0 +1,17 @@
+{
+  "name": "edvantages",
+  "version": "1.0.0",
+  "description": "for edvantages education consultant",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-less": "^1.2.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-html-inspector": "^0.1.6",
+    "less": "^2.6.1"
+  },
+  "author": "Eric Chen",
+  "license": "ISC"
+}

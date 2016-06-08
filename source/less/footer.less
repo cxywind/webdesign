@@ -1,0 +1,135 @@
+.footer {
+	background: lighten(@footer-bg-color,20%);
+	color:@footer-block-content-color;
+	margin-top: @wrapper-margin-vertical;
+	
+	.container {
+		.row {
+			.widget {
+				margin: 20px auto 30px auto;
+				& > h4 {
+					margin: 20px 0;
+				}
+				ul  {
+						padding: 0;
+						& > li {
+							border-top: 1px dotted lighten(@footer-bg-color, 30%);
+							padding: 5px 0;
+						}
+						& > li:hover {
+							background: lighten(@footer-bg-color,15%);
+						}	
+					}
+
+				.post-date {
+					font-size: .8em;
+					color:lighten(@footer-bg-color, 50%);
+					display: block;
+				}
+				&--title {
+					color: @footer-block-title-color;
+				}
+				&--content {
+					color: @footer-block-content-color;
+					line-height: 1.8em;
+					a{
+						&,&:visited,&:hover{
+							color: @footer-link-color;
+						}
+					}
+				}
+				#mcforms {
+					.mc-field-group {
+						input {
+							width: 100%;
+							line-height: 1.0;
+							padding: 6px 8px;
+							vertical-align: middle;
+							box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+							margin-bottom: 5px;
+							color: @font-gray;
+							&:focus {
+								color: @gray;
+							}
+						}
+					}
+					.button {
+						.button-default (@main-yellow);	
+						padding: 6px 12px;
+						border-radius: 4px;
+						margin-top: 5px;
+
+						&:hover {
+							.button-hover(@main-yellow);
+						}
+					}
+				}
+			}
+		}
+	}
+	&--bottom {
+		background: lighten(@footer-bg-color,0%);
+		padding: 1.5em 0;
+	}
+}
+
+#wsc-chat {
+
+	position: fixed;
+	right: -122px;
+
+
+	.chat {
+
+		&__leftbox {
+			border-radius: 0 0 8px 8px;
+			color:#fff;
+			position: absolute;
+			top:2em;
+			right: 64px; 
+			transform:rotate(90deg);
+			-ms-transform:rotate(90deg); 	
+			-moz-transform:rotate(90deg); 	
+			-webkit-transform:rotate(90deg); 
+			-o-transform:rotate(90deg); 
+			background: @main-yellow;
+			width:140px;
+			padding: 0 10px;
+			height: 2em;
+			text-align: center;
+
+			> div {
+				transform: rotate(-90deg);
+				line-height: 2em;
+			}
+
+		}
+		&__rightbox {
+			min-height: 200px;
+			width:120px;
+			background: #fff;
+			border-radius: 8px;
+			color:@main-yellow;
+			top: 175px;
+			border:1px solid @main-yellow;
+			margin-top:-60px;
+
+			&__title {
+				width: 100%;
+				background: @main-yellow;
+				color: #fff;
+				text-align: center;
+				line-height: 2em;
+				border-radius: 8px 8px 0 0;			
+			}
+			ul {
+				padding: 0px;
+				li {
+					width: 100%;
+					text-align: center;
+					padding: 5px 0;
+				}
+			}
+		}	
+	}
+}

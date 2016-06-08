@@ -1,0 +1,47 @@
+
+
+// wrapper for all wrapper
+
+.wrapper (@space : @wrapper-margin-vertical){
+	margin: @space auto;
+}
+
+// button color change
+.button-default (@color : @main-red){  // suitable for all green background and white words
+	border-color:@color;
+	color:#fff;
+	background: @color;
+	border: 1px solid @color;
+}
+.button-hover (@color : @main-red) {
+	background: #fff;
+	color:@color;
+}
+.circle-icon {
+	border-radius: 50%;
+	width: @button-icon;
+	height: @button-icon;
+	text-align: center;
+	line-height: @button-icon;
+}
+.transition(@time:.5s,@animation:ease-in-out) {
+	-webkit-transition:all @time @animation;
+	   -moz-transition:all @time @animation;
+		  -ms-transition:all @time @animation;
+	     -o-transition:all @time @animation;
+	        transition:all @time @animation;
+}
+.perspective(@length:500px){
+	-webkit-perspective:@length;
+	   -moz-perspective:@length;
+		  -ms-perspective:@length;
+	     -o-perspective:@length;
+	        perspective:@length;
+}
+.rotatey(@deg:180deg) {
+		-webkit-transform: rotateY(-180deg);
+		   -moz-transform: rotateY(-180deg);
+		    -ms-transform: rotateY(-180deg);
+		     -o-transform: rotateY(-180deg);
+	          transform: rotateY(-180deg);
+}
